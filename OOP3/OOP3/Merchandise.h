@@ -15,5 +15,4 @@ public:
 	void setLabel(std::string);
 	std::string getLabel();
 
-	~Merchandise();
 };

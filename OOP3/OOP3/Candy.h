@@ -7,11 +7,7 @@ class Candy : public Product
 	std::string candyType;
 	
 public:
-	Candy(int value, std::string productName, int date, std::string type) : Product(value, productName, date)
-	{
-		this->candyType = type;
-		std::cout << "Вызван конструктор Candy!\n";
-	}
+	Candy(int value, std::string productName, int date, std::string type);
 
 	void setCandyType(std::string candyType);
 	std::string getCandyType();
@@ -22,12 +18,9 @@ public:
 
 	public:
 
+		Notation(std::string notation);
+
 		void setNotation(std::string notationText);
 		std::string getNotation();
 	};
-
-	~Candy()
-	{
-		std::cout << "Вызван диструктор Candy!\n";
-	}
 };

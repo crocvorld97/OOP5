@@ -7,17 +7,9 @@ class Cake : public Product
 	std::string cakeType;
 
 public:
-	Cake(int value, std::string productName, int date, std::string type) : Product(value, productName, date)
-	{
-		this->cakeType = type;
-		std::cout << "Вызван конструктор Cake!\n";
-	}
 
+	Cake(int value, std::string productName, int date, std::string type);
+	
 	void setCakeType(std::string type);
 	std::string getCakeType();
-
-	~Cake()
-	{
-		std::cout << "Вызван диструктор Cake!\n";
-	}
 };

@@ -8,11 +8,6 @@ Merchandise::Merchandise(int value, std::string productName)
 	std::cout << "Вызов конструктора Merchandise!\n";
 }
 
-Merchandise::~Merchandise()
-{
-	std::cout << "Вызов диструктора Merchandise\n";
-}
-
 void Merchandise::setLabel(std::string productName)
 {
 	this->label = productName;

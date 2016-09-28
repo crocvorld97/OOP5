@@ -42,7 +42,7 @@ int main()
 		 << ", срок годности: " << c.getShelfLife() << " дней, " << " тип торта: " << c.getCakeType() << endl << endl;
 
 	Candy d(1, "Коммунарка", 100, "Леденец");
-	Candy::Notation notation;
+	Candy::Notation notation("Информация отсутствует!");
 	notation.setNotation("Очень вкусные конфеты!");
 	cout << "Компания производитель: " << d.getLabel() << ", стоимость товара: " << d.getCost()
 		<< ", срок годности: " << d.getShelfLife() << " дней, " << " тип конфет: " << d.getCandyType()
