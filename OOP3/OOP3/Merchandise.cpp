@@ -1,6 +1,11 @@
 #include "stdafx.h"
 #include "Merchandise.h"
 
+void Merchandise::toConsole()
+{
+	std::cout << "Цена: " << this->cost << ". Фирма: " << this->label << ".\n\n";
+}
+
 Merchandise::Merchandise(int value, std::string productName)
 {
 	this->cost = value;

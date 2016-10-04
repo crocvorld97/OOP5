@@ -41,7 +41,7 @@ int main()
 	cout << "Компания производитель: " << c.getLabel() << ", стоимость товара: " << c.getCost()
 		 << ", срок годности: " << c.getShelfLife() << " дней, " << " тип торта: " << c.getCakeType() << endl << endl;
 
-	Candy d(1, "Коммунарка", 100, "Леденец");
+	/*Candy d(1, "Коммунарка", 100, "Леденец");
 	Candy::Notation notation("Информация отсутствует!");
 	notation.setNotation("Очень вкусные конфеты!");
 	cout << "Компания производитель: " << d.getLabel() << ", стоимость товара: " << d.getCost()
@@ -53,7 +53,7 @@ int main()
 	d.setShelfLife(50);
 	d.setValue(3);
 	cout << "Компания производитель: " << d.getLabel() << ", стоимость товара: " << d.getCost()
-		<< ", срок годности: " << d.getShelfLife() << " дней, " << " тип конфет: " << d.getCandyType() << endl << endl;
+		<< ", срок годности: " << d.getShelfLife() << " дней, " << " тип конфет: " << d.getCandyType() << endl << endl;*/
 
 	Flowers e(30, "Цветник", "Роза");
 	cout << "Компания производитель: " << e.getLabel() << ", стоимость товара: " << e.getCost()
@@ -72,6 +72,39 @@ int main()
 	f.setWathType("Механические");
 	cout << "Компания производитель: " << f.getLabel() << ", стоимость товара: " << f.getCost()
 		<< ", тип часов: " << f.getWatchType() << endl << endl;
+
+	Candy d(1, "Коммунарка", 100, "Леденец");
+	Candy::Notation notation("Информация отсутствует!");
+	notation.setNotation("Очень вкусные конфеты!");
+	cout << "Компания производитель: " << d.getLabel() << ", стоимость товара: " << d.getCost()
+		<< ", срок годности: " << d.getShelfLife() << " дней, " << " тип конфет: " << d.getCandyType()
+		<< ". Небольшая характеристика: " << notation.getNotation() << endl << endl;
+
+	cout << "Название конфет через метов вложенного класса: " << notation.getCandyName(d) << endl << endl;
+	
+
+	if (d.isNotation(notation))
+	{
+		cout << "Поле описания не пусто!!!\n\n\n\n";
+	}
+	else
+	{
+		cout << "Поле описания пусто!!!\n\n\n\n";
+	}
+
+	Base *ptr;
+	ptr = &a;
+	ptr->toConsole();
+	ptr = &b;
+	ptr->toConsole();
+	ptr = &c;
+	ptr->toConsole();
+	ptr = &d;
+	ptr->toConsole();
+	ptr = &e;
+	ptr->toConsole();
+	ptr = &f;
+	ptr->toConsole();
 
     return 0;
 }

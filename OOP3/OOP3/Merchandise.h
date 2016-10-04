@@ -1,12 +1,14 @@
 #pragma once
+#include "Base.h"
 
-class Merchandise
+class Merchandise : public Base
 {
 	int cost;
 	std::string label;
 
 public:
-
+	void toConsole();
+	
 	Merchandise(int, std::string);
 	
 	void setValue(int value);
