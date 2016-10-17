@@ -3,7 +3,7 @@
 
 void Candy::toConsole()
 {
-	std::cout << "Тип конфет: " << this->candyType << std::endl;
+	std::cout << "Тип текущего класса: " << typeid(this).name() << ". " << " Тип конфет: " << this->candyType << std::endl;
 }
 
 Candy::Candy(int value, std::string productName, int date, std::string type) : Product(value, productName, date)

@@ -1,2 +1,4 @@
 ﻿  OOP3.cpp
+e:\visual15projects\oop3\oop3\oop3\oop3.cpp(94): warning C4305: инициализация: усечение из "double" к "float"
+e:\visual15projects\oop3\oop3\oop3\oop3.cpp(91): warning C4101: test3: неиспользованная локальная переменная
   OOP3.vcxproj -> E:\Visual15Projects\OOP3\OOP3\Debug\OOP3.exe

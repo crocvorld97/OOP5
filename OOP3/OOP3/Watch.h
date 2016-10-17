@@ -3,12 +3,19 @@
 
 class Watch : public Merchandise
 {
+	static int countOfObjects;
+	const std::string type = "Standart";
 	std::string watchType;
 
 public:
+	const int secret = 10;
+	Watch();
 	Watch(int value, std::string productName, std::string type);
 
+	static int getCountOfObjects();
+
 	void setWathType(std::string type);
-	std::string getWatchType();
+	std::string getWatchType() const;
+	~Watch() { countOfObjects--; }
 
 };
