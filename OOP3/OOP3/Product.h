@@ -7,7 +7,7 @@ class Product :	public Merchandise
 
 public:
 	void toConsole();
-	Product(int value, std::string productName, int date);
+	Product(int value, std::string productName, int weight, int date);
 
 	void setShelfLife(int date);
 	int getShelfLife();

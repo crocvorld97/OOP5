@@ -8,7 +8,7 @@ class Cake : public Product
 
 public:
 	void toConsole();
-	Cake(int value, std::string productName, int date, std::string type);
+	Cake(int value, std::string productName, int weight, int date, std::string type);
 	
 	void setCakeType(std::string type);
 	std::string getCakeType();

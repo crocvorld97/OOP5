@@ -9,7 +9,7 @@ protected:
 public:
 	int power;
 
-	Transport(int cost, std::string label,std::string type, int power) : Merchandise(cost, label)
+	Transport(int cost, std::string label, int weight, std::string type, int power) : Merchandise(cost, label, weight)
 	{
 		this->workType = type;
 		this->power = power;

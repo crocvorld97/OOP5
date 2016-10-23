@@ -8,9 +8,10 @@ class Watch : public Merchandise
 	std::string watchType;
 
 public:
+	void toConsole();
 	const int secret = 10;
 	Watch();
-	Watch(int value, std::string productName, std::string type);
+	Watch(int value, std::string productName, int weight, std::string type);
 
 	static int getCountOfObjects();
 

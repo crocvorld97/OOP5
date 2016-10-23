@@ -3,14 +3,14 @@
 
 void Merchandise::toConsole()
 {
-	std::cout << "Тип текущего класса: " << typeid(this).name() << ". " << " Цена: " << this->cost << ". Фирма: " << this->label << ".\n\n";
+	std::cout << "Тип текущего класса: " << typeid(this).name() << ". " << " Цена: " << this->cost << ". Фирма: " << this->label << ". Вес: " << this->getWeight() << ".\n";
 }
 
-Merchandise::Merchandise(int value, std::string productName)
+Merchandise::Merchandise(int value, std::string productName, int weight)
 {
 	this->cost = value;
 	this->label = productName;
-	
+	this->weight = weight;
 }
 
 void Merchandise::setLabel(std::string productName)

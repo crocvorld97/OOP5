@@ -10,10 +10,10 @@ void Curator::iCanModifyYou(Flowers &example)
 
 void Flowers::toConsole()
 {
-	std::cout << "Тип текущего класса: " << typeid(this).name() << ". " << "Название цветов: " << this->flowerName << std::endl;
+	std::cout << "Тип текущего класса: " << typeid(this).name() << ". " << "Название цветов: " << this->flowerName << ". Вес: " << this->getWeight() << std::endl;
 }
 
-Flowers::Flowers(int value, std::string productName, std::string flower) : Merchandise(value, productName)
+Flowers::Flowers(int value, std::string productName, int weight, std::string flower) : Merchandise(value, productName, weight)
 {
 	this->flowerName = flower;	
 }

@@ -21,7 +21,7 @@ private:
 
 public:
 	void toConsole();
-	Flowers(int value, std::string productName, std::string flower);
+	Flowers(int value, std::string productName, int weight, std::string flower);
 
 	void setFlowerName(std::string flower);
 	std::string getFlowerName();

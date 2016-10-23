@@ -8,7 +8,7 @@ class Candy : public Product
 	
 public:
 	void toConsole();
-	Candy(int value, std::string productName, int date, std::string type);
+	Candy(int value, std::string productName, int weight, int date, std::string type);
 
 	void setCandyType(std::string candyType);
 	std::string getCandyType();

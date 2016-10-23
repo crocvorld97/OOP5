@@ -4,7 +4,7 @@
 class Sportcar : public Transport
 {
 public:
-	Sportcar(int cost, std::string label, std::string type, int power) : Transport(cost, label, type, power) {}
+	Sportcar(int cost, std::string label, int a, std::string type, int power) : Transport(cost, label, a, power) {}
 
 	void toConsole()
 	{

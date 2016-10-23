@@ -145,6 +145,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Contener.h" />
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="Sportcar.h" />
     <ClInclude Include="Transport.h" />
     <ClInclude Include="Base.h" />
@@ -160,6 +162,8 @@
   <ItemGroup>
     <ClCompile Include="Cake.cpp" />
     <ClCompile Include="Candy.cpp" />
+    <ClCompile Include="Contener.cpp" />
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Flowers.cpp" />
     <ClCompile Include="Merchandise.cpp" />
     <ClCompile Include="OOP3.cpp" />

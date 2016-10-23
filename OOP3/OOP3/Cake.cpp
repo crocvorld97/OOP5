@@ -3,10 +3,10 @@
 
 void Cake::toConsole()
 {
-	std::cout << "Тип текущего класса: " << typeid(this).name() << ". Тип торта: " << this->cakeType << std::endl;
+	std::cout << "Тип текущего класса: " << typeid(this).name() << ". Тип торта: " << this->cakeType << ". Вес: " << this->getWeight() << std::endl;
 }
 
-Cake::Cake(int value, std::string productName, int date, std::string type) : Product(value, productName, date)
+Cake::Cake(int value, std::string productName, int weight, int date, std::string type) : Product(value, productName, weight, date)
 {
 	this->cakeType = type;
 }
